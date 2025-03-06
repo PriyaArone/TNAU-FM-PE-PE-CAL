@@ -3,9 +3,7 @@ import streamlit as st
 import numpy as np
 
 def calculate_ploughing_efficiency(w, f, Sp, Se, n, L, W):
-    # Convert speed from km/h to m/s
-    Sp = Sp * (1000 / 3600)
-    Se = Se * (1000 / 3600)
+    
 
     # Basic calculations
     trips = W / w  # Number of trips
