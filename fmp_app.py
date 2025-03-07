@@ -25,7 +25,7 @@ def calculate_ploughing_efficiency(w, f, Sp, Se, n, L, W):
     return total_time, processing_efficiency, pattern_efficiency
 
 # Streamlit App
-st.title("Ploughing Efficiency Calculator")
+st.title("Pattern Efficiency Calculator")
 
 # Input Fields
 w = st.number_input("Effective width of plough (m)", min_value=0.1, value=1.2)
