@@ -11,12 +11,11 @@ def calculate_ploughing_efficiency(w, f, Sp, Se, n, L, W):
     Total_ploughing_time = (W * f) / (Sp * w * 1000)  
 
     # Turning calculations
-    width_of_land = W / ((2 * n) - 1)  
-    Average_turning_distance = width_of_land / 2  
-    Average_turning_for_one_turn = Average_turning_distance / (1000 * Se)  
-    Total_turning_time = trips * (W / (2 * ((2 * n) - 1))) / (1000 * Se)  
-    Dead_furrow_finishing_time = ((n - 0.5) * f) / (1000 * Sp)  
-    total_time = Total_ploughing_time + Total_turning_time + Dead_furrow_finishing_time  
+    width_of_land = ( W / ( 2* n - 1 ) )
+    Average_turning_distance = ( 0.5 ) * ( width_of_land )
+    Average_turning_for_one_turn = (Average_turning_distance) * ( 1 / ( 1000 * Se ))
+    Total_turning_time = ( trips ) *( W / ( 2 ( 2 * n - 1 )) * 1000 * Se )
+    Dead_furrow_finishing_time = ( ( n - 0.5 ) * f ) / ( 1000 * Sp )
 
     # Efficiencies
     pattern_efficiency = (Total_ploughing_time / total_time) * 100
